@@ -429,8 +429,8 @@ int main(int argc, char *argv[]) {
                             - (b[i][j+1] * (w[i][j+1] - w[i][j]) / h_2 - b[i][j] * (w[i][j] - w[i][j-1]) / h_2) / h_2
                             - F[i][j];
                 r_r += r[i][j] * r[i][j];
-                if(abs(r[i][j]) > max_r){
-                    max_r = abs(r[i][j]);
+                if(fabs(r[i][j]) > max_r){
+                    max_r = fabs(r[i][j]);
                 }
 
                 if(i == row_start + 1 && tup_x[0]){
